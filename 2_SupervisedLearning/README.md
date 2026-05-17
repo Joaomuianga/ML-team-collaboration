@@ -18,6 +18,17 @@ The objective of this assignment is to build a reliable binary classifier to dis
 ## 📈 Evaluation
 Models are evaluated and compared using Accuracy, Macro F1-score, ROC curves, and AUC, alongside an analysis of computational training times.
 
+## 👥 Team Workflow & Task Distribution
+The development pipeline was divided into five modular roles to efficiently cover data preparation and algorithm benchmarking:
+
+1. **Data Explorer (Role 1):** Handled data loading, class balance reporting, and exploratory data analysis (EDA), generating feature distributions (histograms/boxplots) and correlation heatmaps to understand baseline relationships.
+2. **Feature Engineer (Role 2):** Managed the stratified train/test partitioning, handled standard scaling, and conducted near-zero variance and correlation-based feature filtering to minimize multicollinearity.
+3. **KNN and Logistic Regression Specialist (Role 3):** Built and optimized K-Nearest Neighbors pipelines (sweeping $k$ parameters) and trained regularized Logistic Regression estimators, analyzing model coefficients for clinical interpretability.
+4. **SVM Specialist (Role 4):** Evaluated performance over Linear, Polynomial, and RBF kernels, implementing hyperparameter grid searches across $C$ and $\gamma$ spaces.
+5. **Neural Network Specialist (Role 5):** Configured multi-layer perceptron hidden structures, benchmarked loss reduction behaviors using different activation functions, and tracked training curves.
+
+*Note: Model Comparison (Task 7) and the Written Report (Task 8) were completed as a shared team synthesis effort.*
+
 ## 📂 Project Structure
 
 ```text
@@ -25,7 +36,7 @@ Models are evaluated and compared using Accuracy, Macro F1-score, ROC curves, an
 │
 ├── data/
 │   ├── 1_raw/                       # Original X and y datasets
-│   └── 2_processed/                 # Scaled and train/test split data (X_train, y_train, etc.)
+│   └── 2_processed/                 # Scaled and train/test split data (Role 2)
 │
 ├── docs/
 │   ├── guide/                       # Assignment instructions and guidelines
@@ -33,7 +44,7 @@ Models are evaluated and compared using Accuracy, Macro F1-score, ROC curves, an
 │       └── Team11_SupervisedLearning_Report.pdf  # Final scientific report
 │
 ├── figures/
-│   └── exploration/                 # Saved EDA visualizations (boxplots, heatmaps, histograms)
+│   └── exploration/                 # Saved EDA visualizations: boxplots, heatmaps, histograms (Role 1)
 │
 ├── notebooks/                       # Modular machine learning pipeline
 │   ├── 1_Preprocessing.ipynb
@@ -43,8 +54,8 @@ Models are evaluated and compared using Accuracy, Macro F1-score, ROC curves, an
 │   ├── 5_NeuralNetwork.ipynb
 │   └── Team11_SupervisedLearning_Notebook.ipynb  # Final unified deliverable
 │
-├── results/                         # Evaluation outputs and model comparisons
+├── results/                         # Evaluation outputs and model comparisons (Task 7)
 │   ├── roc_curves.png
 │   └── summary_results.csv
 │
-└── README.md                        # This file (Project overview & conclusions)
+└── README.md                        # This file
