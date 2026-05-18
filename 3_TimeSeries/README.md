@@ -42,8 +42,8 @@ To ensure parallel development and avoid Git merge conflicts, the pipeline is di
 │       └── Team11_TimeSeries_Report.pdf  # Final scientific report
 │
 ├── figures/
-│   ├── exploration/                 # ECG signal plots and class imbalance charts (Role 1)
-│   └── evaluation/                  # Loss curves, accuracy plots, and confusion matrices (Roles 4 & 5)
+│   ├── evaluation/                  # Loss curves, accuracy plots, and confusion matrices (Roles 4 & 5)
+│   └── exploration/                 # ECG signal plots and class imbalance charts (Role 1)
 │
 ├── notebooks/                       # Modular pipeline mapped to team roles
 │   ├── 1_DataExploration.ipynb
