@@ -1,0 +1,5 @@
+Model,Accuracy,F1-Score (Macro),AUC,Training Time (s)
+KNN,0.9474,0.944,0.9881,0.0034
+Logistic Regression,0.9649,0.9627,0.9917,0.0031
+SVM (RBF),0.9649,0.9627,0.994,0.0236
+Neural Network,0.9474,0.944,0.9395,0.3827
